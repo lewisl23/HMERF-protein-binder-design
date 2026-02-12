@@ -1,0 +1,20 @@
+
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+source leaprc.phosaa14SB
+loadAmberParams frcmod.ionsjc_tip3p
+loadAmberParams frcmod.ions1lm_1264_tip3p
+set default PBRadii mbondi3
+x=loadpdb martin-yasaraMUT_ppi_C_1063_dldesign_0_cycle0_af2pred_dldesign_37_af2pred.pdb_reduced.pdb
+check x
+saveamberparm x martin-yasaraMUT_ppi_C_1063_dldesign_0_cycle0_af2pred_dldesign_37_af2pred.pdb_vac.prmtop martin-yasaraMUT_ppi_C_1063_dldesign_0_cycle0_af2pred_dldesign_37_af2pred.pdb_vac.inpcrd
+savepdb x martin-yasaraMUT_ppi_C_1063_dldesign_0_cycle0_af2pred_dldesign_37_af2pred.pdb_amber-vac.pdb
+solvateoct x TIP3PBOX 10 iso
+charge x
+savepdb x martin-yasaraMUT_ppi_C_1063_dldesign_0_cycle0_af2pred_dldesign_37_af2pred.pdb_amber.pdb
+addionsrand x NA 0
+addionsrand x CL 0
+addionsrand x NA 58
+addionsrand x CL 58
+saveamberparm x martin-yasaraMUT_ppi_C_1063_dldesign_0_cycle0_af2pred_dldesign_37_af2pred.pdb.prmtop martin-yasaraMUT_ppi_C_1063_dldesign_0_cycle0_af2pred_dldesign_37_af2pred.pdb.inpcrd
+quit
