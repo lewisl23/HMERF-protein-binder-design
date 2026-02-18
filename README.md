@@ -23,7 +23,7 @@ angles are analysed from the simulation.
 ### 5. Molecular Dynamic simulation
 
 ## Note: 
-### 1. data_analysis_drug_53-244_173.R is for analysis off long simulation
+### 1. data_analysis_drug_53-244_173.R is for analysis of long simulation
 ### 2. data_analysis_drug_53-244.R is for superimposition on Ca backbone 53-244
 ### 3. data_analysis_drug_58-249.R is for superimposition on Ca backbone 53-249
 ### 4. file_convert_frame100.sh converts the MD simualtion from nc to xtc and dcd file type for easier storage and access
